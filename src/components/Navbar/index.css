@@ -1,0 +1,177 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-black);
+  padding: 1.6rem 3.2rem;
+  /* overflow-x: hidden; */
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 12.9rem;
+  height: 3.7rem;
+}
+
+.navbar-links,
+.navbar-login {
+  display: none;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.navbar-smallscreen > button {
+  font-size: 0;
+}
+
+.navbar-smallscreen-button-open > svg,
+.navbar-smallscreen-button-close > svg {
+  font-size: 2.4rem;
+}
+
+.navbar-smallscreen-button-open {
+  background: transparent;
+  font-size: 0;
+  border: none;
+}
+
+.navbar-smallscreen-button-close {
+  background: transparent;
+  font-size: 0;
+  border: none;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: var(--color-golden);
+}
+
+.navbar-smallscreen {
+  /* position: relative; */
+}
+
+.navbar-smallscreen-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-black);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.navbar-smallscreen-overlay.show {
+  transform: translateY(0%);
+  pointer-events: all;
+}
+
+.navbar-smallscreen-overlay.hide {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.navbar-links-smallscreen {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar-links-smallscreen li {
+  font-family: var(--font-base);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-golden);
+}
+
+.navbar-links-smallscreen li:hover {
+  color: var(--color-white);
+}
+
+@keyframes openMenu {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 768px) {
+  /* Delete the smallscreen for small devices */
+  .navbar-smallscreen {
+    display: none;
+  }
+
+  .navbar-logo img {
+    width: 10.9rem;
+    height: 3.7rem;
+  }
+
+  .navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.2rem;
+  }
+
+  .navbar-links a {
+    transition: 0.5s ease;
+    font-size: 1.4rem;
+  }
+
+  .navbar-links a:hover {
+    color: var(--color-grey);
+  }
+
+  .navbar-login {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .navbar-login a {
+    border-bottom: 1px solid var(--color-black);
+    transition: 0.5s ease;
+  }
+
+  .navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+  }
+
+  .navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--color-golden);
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-logo img {
+    width: 19.9rem;
+    height: 5.7rem;
+  }
+
+  .navbar-links {
+    gap: 3.2rem;
+  }
+
+  .navbar-links a {
+    font-size: 1.6rem;
+  }
+}
