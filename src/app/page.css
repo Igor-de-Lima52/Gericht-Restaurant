@@ -8,21 +8,22 @@
   align-items: center;
 }
 
-/* .app__bg {
-  background: url("./assets/bg.png");
+.app-bg {
+  background: url("../../public/assets/bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
-} */
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .wrapper-info {
@@ -51,6 +52,7 @@
 
 .wrapper-img img {
   width: 100%;
+  height: 33.6rem;
 }
 
 .custom-button {
@@ -66,20 +68,23 @@
   border: none;
   outline: none;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 
-.p-cormorant {
+.f-cormorant {
   font-family: var(--font-base);
   color: var(--color-white);
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  font-feature-settings: "tnum" on, "lnum" on;
+  font-feature-settings:
+    "tnum" on,
+    "lnum" on;
   line-height: 2.9rem;
   font-size: 1.9rem;
 }
 
-.p-opensans {
+.f-opensans {
   font-family: var(--font-alt);
   color: var(--color-white);
   letter-spacing: 0.04em;
@@ -98,25 +103,47 @@
 }
 
 .spoon-img {
-  width: 45px;
+  width: 4.5rem;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 540px) {
   .section-padding {
     padding: 4rem;
   }
 
-  .p-cormorant {
+  .f-cormorant {
     font-size: 2.1rem;
   }
 
-  .p-opensans {
+  .f-opensans {
     font-size: 1.4rem;
   }
 
   .headtext-cormorant {
-    font-size: 6.4rem;
+    font-size: 6.5rem;
     line-height: 8.32rem;
+  }
+
+  .wrapper-img img {
+    width: 80%;
+    height: 43.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper-img {
+    /* margin: 0; */
+  }
+
+  .wrapper-img img {
+    height: 53.6rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .wrapper-img img {
+    width: 60%;
+    /* height: 73.6rem; */
   }
 }
 
@@ -139,6 +166,11 @@
     margin: 0 0 0 2rem;
   }
 
+  .wrapper-img img {
+    width: 90%;
+    height: 100%;
+  }
+
   .wrapper-info {
     width: 50%;
   }
@@ -147,30 +179,39 @@
     margin: 0 2rem 0 0;
   }
 
-  .p-cormorant {
+  .f-cormorant {
     font-size: 2.3rem;
   }
 
-  .p-opensans {
+  .f-opensans {
     font-size: 1.6rem;
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1920px) {
+  .custom-button {
+    padding: 1rem 2rem;
+  }
+
   .custom-button,
-  .p-cormorant {
+  .f-cormorant {
     font-size: 3.7rem;
     line-height: 6.7rem;
   }
 
-  .p-opensans {
+  .wrapper-img img {
+    width: 66.7rem;
+    height: 73.6rem;
+  }
+
+  .f-opensans {
     font-size: 3rem;
     line-height: 5rem;
   }
 
   .headtext-cormorant {
     font-size: 15rem;
-    line-height: 21rem;
+    line-height: 10rem;
   }
 
   .spoon-img {

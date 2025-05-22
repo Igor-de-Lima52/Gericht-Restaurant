@@ -19,19 +19,19 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Image src={images.gericht} alt='Gerítch' />
+        <h1>Gerítcht</h1>
       </div>
       <ul className="navbar-links">
-        <li className="p-opensans"><a href='#home'>Home</a></li>
-        <li className="p-opensans"><a href='#about'>About</a></li>
-        <li className="p-opensans"><a href='#menu'>Menu</a></li>
-        <li className="p-opensans"><a href='#awards'>Awards</a></li>
-        <li className="p-opensans"><a href='#contact'>Contact</a></li>
+        <li className="f-opensans"><a href='#home'>Home</a></li>
+        <li className="f-opensans"><a href='#about'>About</a></li>
+        <li className="f-opensans"><a href='#menu'>Menu</a></li>
+        <li className="f-opensans"><a href='#awards'>Awards</a></li>
+        <li className="f-opensans"><a href='#contact'>Contact</a></li>
       </ul>
       <div className="navbar-login">
-        <a href="#login" className="p-opensans">Log In / Register</a>
+        <a href="#login" className="f-opensans">Log In / Register</a>
         <div />
-        <a href="/" className="p-opensans">Book Table</a>
+        <a href="/" className="f-opensans">Book Table</a>
       </div>
       <div className="navbar-smallscreen">
         <button className="navbar-smallscreen-button-open" onClick={handleToggleMenu}>
@@ -42,11 +42,11 @@ export function Navbar() {
             <MdOutlineRestaurantMenu />
           </button>
           <ul className="navbar-links-smallscreen" >
-            <li className="p-opensans"><a href='#home' onClick={handleToggleMenu}>Home</a></li>
-            <li className="p-opensans"><a href='#about' onClick={handleToggleMenu}>About</a></li>
-            <li className="p-opensans"><a href='#menu' onClick={handleToggleMenu}>Menu</a></li>
-            <li className="p-opensans"><a href='#awards' onClick={handleToggleMenu}>Awards</a></li>
-            <li className="p-opensans"><a href='#contact' onClick={handleToggleMenu}>Contact</a></li>
+            <li className="f-opensans"><a href='#home' onClick={handleToggleMenu}>Home</a></li>
+            <li className="f-opensans"><a href='#about' onClick={handleToggleMenu}>About</a></li>
+            <li className="f-opensans"><a href='#menu' onClick={handleToggleMenu}>Menu</a></li>
+            <li className="f-opensans"><a href='#awards' onClick={handleToggleMenu}>Awards</a></li>
+            <li className="f-opensans"><a href='#contact' onClick={handleToggleMenu}>Contact</a></li>
           </ul>
         </div>
       </div>

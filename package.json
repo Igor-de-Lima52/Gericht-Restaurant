@@ -15,9 +15,11 @@
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^8.57.1",
     "typescript": "^5"
   }
 }

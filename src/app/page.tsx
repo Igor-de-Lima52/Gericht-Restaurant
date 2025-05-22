@@ -10,6 +10,7 @@ import { Gallery } from "@/container/Gallery";
 import { FindUs } from "@/container/Findus";
 import { Footer } from "@/container/Footer";
 
+
 export default function Home() {
   return (
     <div>

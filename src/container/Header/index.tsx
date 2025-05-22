@@ -1,22 +1,24 @@
-import { SubHeading } from '@/components/SubHeading';
+import Image from 'next/image';
 import './styles.css';
 
 import { images } from '@/constants';
-import Image from 'next/image';
+
+import { SubHeading } from '@/components/SubHeading';
+import { Button } from '@/components/Button';
 
 export function Header() {
   return (
     <div className="header wrapper section-padding" id="home">
       <div className="wrapper-info">
         <SubHeading title="Chase the new flavour" />
-        <h1>The Key to Fine Dining</h1>
-        <p className="p-opensans" style={{ margin: '2rem 0'}}>
+        <h2>The Key to Fine Dining</h2>
+        <p className="f-opensans" style={{ margin: '2rem 0'}}>
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus 
         </p>
-        <button type="button" className="custom-button">Explore Menu</button>
+        <Button title="Explore Menu" type="button" />
       </div>
       <div className="wrapper-img">
-        <Image src={images.welcome} alt="Header img" width={667} height={736} />
+        <Image className="img" src={images.welcome} alt="Header img" width={367} height={436} />
       </div>
     </div>
   )

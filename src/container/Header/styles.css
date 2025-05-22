@@ -2,13 +2,13 @@
   background: var(--color-black);
 }
 
-.wrapper-info > h1 {
+.wrapper-info > h2 {
   font-family: var(--font-base);
   color: var(--color-golden);
   letter-spacing: 0.04em;
   line-height: 130%;
   font-weight: 700;
-  font-size: 9rem;
+  font-size: 6rem;
 }
 
 .wrapper-info > p {
@@ -16,11 +16,8 @@
   color: var(--color-grey);
 }
 
-.custom-button {
-  background: var(--color-golden);
-}
-
-.custom-button:hover {
-  transition: all 0.4s;
-  opacity: 0.8;
+@media (min-width: 1920px) {
+  .wrapper-info > button {
+    margin-top: 2rem;
+  }
 }

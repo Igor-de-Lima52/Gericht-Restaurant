@@ -1,0 +1,99 @@
+.aboutus {
+  position: relative;
+}
+
+.aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.aboutus-overlay > img {
+  width: 29.1rem;
+  height: 31.5rem;
+}
+
+.aboutus-content {
+  width: 100%;
+  z-index: 1;
+  gap: 3.5rem;
+}
+
+.aboutus-content {
+  flex-direction: column;
+}
+
+.about-us-content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.about-us-content-about > h3,
+.history-content-about > h3 {
+  font-size: 3.4rem;
+}
+
+.history-content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.history-content-about > p,
+.about-us-content-about > p {
+  color: var(--color-grey);
+  text-transform: none;
+  margin: 3.2rem 0;
+}
+
+@media (min-width: 650px) {
+  .aboutus-content {
+    flex-direction: row;
+    gap: 8.5rem;
+  }
+
+  .aboutus-overlay > img {
+    width: 39.1rem;
+    height: 41.5rem;
+  }
+
+  .about-us-content-about > h3,
+  .history-content-about > h3 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-us-content-about > h3,
+  .history-content-about > h3 {
+    font-size: 4.5rem;
+  }
+
+  .about-us-content-knife > img {
+    width: 70.3rem;
+    height: 8.4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-us-content-about > h3,
+  .history-content-about > h3 {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-us-content-about > h3,
+  .history-content-about > h3 {
+    font-size: 7rem;
+  }
+
+  .history-content-about > p,
+  .about-us-content-about > p {
+    margin: 4.8rem 0;
+  }
+}
