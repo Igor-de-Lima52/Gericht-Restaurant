@@ -13,7 +13,7 @@ export function Intro() {
   function videoPause() {
     videoRef.current!.pause()
     setPlayVideo(state => !state)
-  }
+  } 
   
   function handleVideo() {
     setPlayVideo(state => !state)
