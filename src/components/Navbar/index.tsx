@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link';
 import styles from './index.module.css';
 
 import { useState } from 'react';
@@ -23,7 +24,7 @@ export function Navbar() {
       </div>
       <ul className={styles.links}>
         {
-          links.map((link, index) => <li className="f-opensans" key={index}><a href={`#${link}`}>{link}</a></li>)
+          links.map((link, index) => <li className="f-opensans" key={index}><Link href={`#${link}`}>{link}</Link></li>)
         }
         
         {/* <li className="f-opensans"><a href='#about'>About</a></li>
@@ -32,9 +33,9 @@ export function Navbar() {
         <li className="f-opensans"><a href='#contact'>Contact</a></li> */}
       </ul>
       <div className={styles.login}>
-        <a href="#login" className="f-opensans">Log In / Register</a>
+        <Link href="#login" className="f-opensans">Log In / Register</Link>
         <div />
-        <a href="/" className="f-opensans">Book Table</a>
+        <Link href="/" className="f-opensans">Book Table</Link>
       </div>
       <div className={styles.smallscreen}>
         <button className={styles['smallscreen-button-open']} onClick={handleToggleMenu}>
@@ -46,7 +47,7 @@ export function Navbar() {
           </button>
           <ul className={styles['links-smallscreen']}>
             {
-              links.map((link, index) => <li className="f-opensans" key={index}><a href={`#${link}`} onClick={handleToggleMenu}>{link}</a></li>)
+              links.map((link, index) => <li className="f-opensans" key={index}><Link href={`#${link}`} onClick={handleToggleMenu}>{link}</Link></li>)
             }
 
             {/* <li className="f-opensans"><a href='#home' onClick={handleToggleMenu}>Home</a></li>
