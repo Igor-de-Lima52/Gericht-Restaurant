@@ -1,6 +1,6 @@
 "use client"
 
-import './styles.css';
+import styles from './index.module.css';
 
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import { useEffect, useRef, useState } from 'react';
@@ -36,14 +36,14 @@ export function Intro() {
 
 
   return (
-    <div className="video">
-      <video className="video-player" ref={videoRef} controls={false} muted>
+    <section className={styles.video}>
+      <video ref={videoRef} controls={false} muted>
         <source src="/assets/meal.mp4" type="video/mp4" />
         Your browser doesn't support the video tag.
       </video>
 
-      <div className="video-overlay flex-center">
-        <div className="video-overlay-circle flex-center" onClick={handleVideo}>
+      <div className={`${styles.overlay} flex-center`}>
+        <div className={`${styles['overlay-circle']} flex-center`} onClick={handleVideo}>
           {playVideo ? (
             <BsPauseFill color="#FFF" fontSize={30} />
           ) : (
@@ -51,6 +51,6 @@ export function Intro() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   )
 }

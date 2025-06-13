@@ -1,5 +1,6 @@
-import { ButtonHTMLAttributes, HTMLProps } from "react"
-import "./index.css"
+import styles from "./index.module.css"
+
+import { ButtonHTMLAttributes } from "react"
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
@@ -7,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ title, ...props }: ButtonProps) {
   return (
-    <button className="custom-button" {...props}>
+    <button className={styles['custom-button']} {...props}>
       {title}
     </button>
   )

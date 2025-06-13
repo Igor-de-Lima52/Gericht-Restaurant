@@ -1,8 +1,0 @@
-.custom-button {
-  background: var(--color-golden);
-}
-
-.custom-button:hover {
-  transition: all 0.4s;
-  opacity: 0.8;
-}

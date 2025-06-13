@@ -1,0 +1,154 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-black);
+  padding: 6.4rem 0 6.4rem 3.2rem;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  min-width: 100%;
+  padding-right: 3.2rem;
+}
+
+.info > h3 {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+
+.info > p {
+  color: var(--color-grey);
+}
+
+.info > button {
+  margin-top: 1.6rem;
+}
+
+.imgs {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  position: relative;
+  margin: 8rem 0;
+}
+
+.imgs-container {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.imgs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.img-card {
+  position: relative;
+  min-width: 240px;
+  height: 32rem;
+  margin-right: 3.2rem;
+  border: 2px solid var(--color-golden);
+}
+
+.img-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.img-card:hover > img {
+  opacity: 0.35;
+}
+
+.img-icon {
+  position: absolute;
+  color: #fff;
+  font-size: 3.2rem;
+  opacity: 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.img-card:hover .img-icon {
+  opacity: 1;
+}
+
+.imgs-arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.6rem;
+  position: absolute;
+  bottom: 5%;
+}
+
+.imgs-arrows > svg {
+  color: var(--color-golden);
+  font-size: 3.2rem;
+  cursor: pointer;
+  background: var(--color-black);
+  border-radius: 5px;
+}
+
+.imgs-arrows > svg:hover {
+  color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+  .info {
+    min-width: 500px;
+  }
+
+  .img-card {
+    min-width: 301px;
+    height: 44.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .gallery {
+    flex-direction: row;
+    align-items: center;
+    padding: 6.4rem 0 6.4rem 9.6rem;
+  }
+
+  .imgs {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .info {
+    min-width: 1000px;
+    padding-right: 6.4rem;
+  }
+
+  .info > p {
+    font-size: 2.6rem;
+    margin: 2rem 0;
+  }
+
+  .img-card {
+    min-width: 400px;
+    height: 550px;
+  }
+}

@@ -1,4 +1,4 @@
-import "./index.css"
+import styles from "./index.module.css"
 import { images } from "@/constants"
 import Image from "next/image"
 
@@ -8,7 +8,7 @@ interface SubheadingProps {
 
 export function SubHeading({ title }: SubheadingProps) {
   return (
-    <div className="subheading">
+    <div className={styles.subheading}>
       <p className="f-cormorant">{title}</p>
       <Image src={images.spoon} alt="spoon" className="spoon-img" width={45} height={30} />
     </div>

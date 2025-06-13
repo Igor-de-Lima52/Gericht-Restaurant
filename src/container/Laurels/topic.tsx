@@ -1,6 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import styles from "./topic.module.css"
 
-import "./topic.css"
+import Image, { StaticImageData } from "next/image";
 
 interface TopicProps {
   data: {
@@ -12,9 +12,9 @@ interface TopicProps {
 
 export function Topic({ data }: TopicProps) {
   return (
-    <div className="topic">
+    <div className={styles.topic}>
       <Image src={data.imgUrl} alt="" width={79} height={79} />
-      <div className="topic-text">
+      <div className={styles.text}>
         <h5 className="f-cormorant">{data.title}</h5>
         <p className="f-opensans">{data.subtitle}</p>
       </div>

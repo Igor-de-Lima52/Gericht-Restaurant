@@ -1,0 +1,84 @@
+.findus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.findus-info {
+  width: 100%;
+}
+
+.findus-info > button {
+  padding: 0.8rem 3.2rem;
+}
+
+.findus-text {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0;
+  gap: 1.6rem;
+}
+
+.findus-text > p {
+  margin-bottom: 1.6rem;
+  color: var(--color-grey);
+}
+
+.findus-text > h5 {
+  color: var(--color-golden);
+}
+
+.findus-text > span {
+  text-transform: none;
+}
+
+.findus-image > img {
+  width: 100%;
+  height: 40rem;
+}
+
+@media (min-width: 768px) {
+  .findus {
+    gap: 5rem;
+  }
+
+  .findus-text {
+    margin: 6.4rem 0;
+  }
+
+  .findus-image > img {
+    width: 46rem;
+    height: 54rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .findus {
+    gap: 0;
+    flex-direction: row;
+  }
+  .findus-text {
+    margin: 4rem 0;
+  }
+
+  .findus-image > img {
+    width: 42rem;
+    height: 50rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .findus {
+    gap: 12rem;
+  }
+
+  .findus-text {
+    margin: 6.4rem 0;
+  }
+
+  .findus-image > img {
+    width: 66.7rem;
+    height: 73.6rem;
+  }
+}

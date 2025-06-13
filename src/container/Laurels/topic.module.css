@@ -5,14 +5,11 @@
   justify-content: center;
 }
 
-.topic-text {
-}
-
-.topic-text > h5 {
+.text > h5 {
   color: var(--color-golden);
 }
 
-.topic-text > p {
+.text > p {
   color: var(--color-grey);
 }
 
@@ -21,11 +18,11 @@
     gap: 2rem;
   }
 
-  .topic-text > h5 {
+  .text > h5 {
     font-size: 2rem;
   }
 
-  .topic-text > p {
+  .text > p {
     font-size: 1.4rem;
   }
 }
@@ -40,11 +37,11 @@
     height: 12rem;
   }
 
-  .topic-text > h5 {
+  .text > h5 {
     font-size: 3.8rem;
   }
 
-  .topic-text > p {
+  .text > p {
     font-size: 2rem;
     line-height: 4rem;
   }

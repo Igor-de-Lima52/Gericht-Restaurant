@@ -2,7 +2,7 @@
   background: var(--color-black);
 }
 
-.wrapper-info > h2 {
+.info > h2 {
   font-family: var(--font-base);
   color: var(--color-golden);
   letter-spacing: 0.04em;
@@ -11,13 +11,13 @@
   font-size: 6rem;
 }
 
-.wrapper-info > p {
+.info > p {
   margin: 2rem 0;
   color: var(--color-grey);
 }
 
 @media (min-width: 1920px) {
-  .wrapper-info > button {
+  .info > button {
     margin-top: 2rem;
   }
 }

@@ -1,5 +1,6 @@
+import styles from './index.module.css';
+
 import { ComponentProps } from 'react';
-import './index.css';
 
 type RootProps = ComponentProps<'div'>
 
@@ -12,17 +13,17 @@ type SpanProps = ComponentProps<'span'>
 
 export function Root(props: RootProps) {
   return (
-    <div className="item-root" {...props} />
+    <div className={styles['item-root']} {...props} />
   )
 }
 
 export function Info({ name, price, ...props }: InfoProps) {
   return (
-    <div className="item-info" {...props}>
-      <div className="div-name">
+    <div className={styles['item-info']} {...props}>
+      <div className={styles['div-name']}>
         <Name>{name}</Name>
       </div>
-      <div className="item-line"/>
+      <div className={styles['item-line']} />
       <Price>{price}</Price>
     </div>
   )
@@ -30,18 +31,18 @@ export function Info({ name, price, ...props }: InfoProps) {
 
 function Name(props: SpanProps) {
   return (
-    <span className="item-name f-cormorant" {...props} />
+    <span className={`${styles['item-name']} f-cormorant`} {...props} />
   )
 }
 
 function Price(props: SpanProps) {
   return (
-    <span className="item-price f-cormorant" {...props} />
+    <span className={`${styles['item-price']} f-cormorant`} {...props} />
   )
 }
 
 export function Tags(props: SpanProps) {
   return (
-    <span className="item-tags f-opensans" {...props} />
+    <span className={`${styles['item-tags']} f-cormorant`} {...props} />
   )
 }

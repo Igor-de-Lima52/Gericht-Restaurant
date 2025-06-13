@@ -55,22 +55,6 @@
   height: 33.6rem;
 }
 
-.custom-button {
-  background-color: var(--color-crimson);
-  color: var(--color-black);
-  font-family: var(--font-base);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 28px;
-  font-size: 16px;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 0.5rem;
-}
-
 .f-cormorant {
   font-family: var(--font-base);
   color: var(--color-white);
@@ -96,8 +80,9 @@
 .headtext-cormorant {
   font-family: var(--font-base);
   color: var(--color-golden);
-  font-size: 4.5rem;
-  line-height: 7rem;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: capitalize;
 }
@@ -131,10 +116,6 @@
 }
 
 @media (min-width: 768px) {
-  .wrapper-img {
-    /* margin: 0; */
-  }
-
   .wrapper-img img {
     height: 53.6rem;
   }
@@ -143,7 +124,6 @@
 @media (min-width: 900px) {
   .wrapper-img img {
     width: 60%;
-    /* height: 73.6rem; */
   }
 }
 
@@ -186,14 +166,14 @@
   .f-opensans {
     font-size: 1.6rem;
   }
+
+  .headtext-cormorant {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
 
 @media (min-width: 1920px) {
-  .custom-button {
-    padding: 1rem 2rem;
-  }
-
-  .custom-button,
   .f-cormorant {
     font-size: 3.7rem;
     line-height: 6.7rem;
@@ -210,8 +190,8 @@
   }
 
   .headtext-cormorant {
-    font-size: 15rem;
-    line-height: 10rem;
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
   .spoon-img {

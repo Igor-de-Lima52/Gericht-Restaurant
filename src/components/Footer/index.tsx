@@ -1,7 +1,10 @@
-import './index.css';
+import styles from './index.module.css';
 
 export function FooterOverlay() {
   return (
-    <div>FooterOverlay</div>
+    <div className={styles.overlay}>
+      <div className={styles['overlay-black']} />
+      <div className={`${styles['overlay-img']} app-bg`} />
+    </div>
   )
 }

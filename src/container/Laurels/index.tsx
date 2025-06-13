@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import styles from './index.module.css';
 
-import './styles.css';
+import Image from 'next/image';
 
 import { images } from '@/constants';
 import { SubHeading } from '@/components/SubHeading';
@@ -9,19 +9,19 @@ import { Topic } from './topic';
 
 export function Laurels() {
   return (
-    <div id="awards" className="app-bg wrapper section-padding laurels">
-      <div className="awards">
+    <section className="app-bg wrapper section-padding" id="awards">
+      <div>
         <SubHeading title='Awards & Recognition' />
         <h3 className="headtext-cormorant">Our Laurels</h3>
-        <div className="awards-topics">
+        <div className={styles.topics}>
           {
             data.awards.map((award, index) => <Topic key={index} data={award} />)
           }
         </div>
       </div>
-      <div className="awards-image">
+      <div className={styles.image}>
         <Image src={images.laurels} alt="A grilled chicken with some asparagus and cherry tomatoes." width={555} height={691} />
       </div>
-    </div>
+    </section>
   )
 }

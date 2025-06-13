@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './index.module.css';
 
 import { SubHeading } from '@/components/SubHeading';
 import * as MenuItem from '@/components/MenuItem';
@@ -8,13 +8,13 @@ import { Button } from '@/components/Button';
 
 export function SpecialMenu() {
   return (
-    <div className="specialMenu flex-center section-padding" id="menu">
-      <div className="specialMenu-title">
+    <div className={`${styles.specialMenu} flex-center section-padding`} id="menu">
+      <div className={styles.title}>
         <SubHeading title="Menu that fits you palatte" />
         <h3 className="headtext-cormorant">Today's Special</h3>
       </div>
-      <div className="specialMenu-menu">
-        <div className="specialMenu-menu-wine flex-center">
+      <div className={styles.menu}>
+        <div className={`${styles['menu-wine']} flex-center`}>
           <h4 className="f-cormorant">Wine & Beer</h4>
             {
               data.wines.map((wine, index) => (
@@ -26,11 +26,11 @@ export function SpecialMenu() {
             }
         </div>
 
-        <div className="specialMenu-menu-img">
+        <div className={styles['menu-img']}>
           <Image src={images.menu} alt="Coktail cup" width={150} height={200}  />
         </div>
 
-        <div className="specialMenu-menu-cocktails flex-center">
+        <div className={`${styles['menu-cocktails']} flex-center`}>
           <h4 className="f-cormorant">Cocktails</h4>
             {
               data.cocktails.map((cocktail, index) => (
@@ -43,7 +43,7 @@ export function SpecialMenu() {
         </div>
       </div>
 
-      <div className="specialMenu-div-button">
+      <div className={styles['div-button']}>
         <Button type="button" title="View More" />
       </div>
     </div>
