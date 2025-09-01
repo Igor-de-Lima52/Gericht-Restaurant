@@ -2,9 +2,9 @@ import styles from './index.module.css';
 
 import Image from 'next/image';
 
-import { images } from '@/constants';
+import { images } from '@/constants/portuguese';
 import { SubHeading } from '@/components/SubHeading';
-import { data } from '@/constants';
+import { data } from '@/constants/portuguese';
 import { Topic } from './topic';
 
 export function Laurels() {

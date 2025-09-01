@@ -2,7 +2,7 @@ import styles from './index.module.css';
 
 import { SubHeading } from '@/components/SubHeading';
 import * as MenuItem from '@/components/MenuItem';
-import { data, images } from '@/constants';
+import { data, images } from '@/constants/portuguese';
 import Image from 'next/image';
 import { Button } from '@/components/Button';
 

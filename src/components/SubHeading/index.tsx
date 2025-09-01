@@ -1,5 +1,5 @@
 import styles from "./index.module.css"
-import { images } from "@/constants"
+import { images } from "@/constants/portuguese"
 import Image from "next/image"
 
 interface SubheadingProps {

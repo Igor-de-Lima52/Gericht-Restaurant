@@ -6,7 +6,7 @@ import { SubHeading } from '@/components/SubHeading';
 import { Button } from '@/components/Button';
 import { useRef } from 'react';
 import { BsArrowLeftShort, BsArrowRightShort, BsInstagram } from 'react-icons/bs';
-import { images } from '@/constants';
+import { images } from '@/constants/portuguese';
 import Image from 'next/image';
 
 const imgs = [images.gallery01, images.gallery02, images.gallery03, images.gallery04]
