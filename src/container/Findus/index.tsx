@@ -17,7 +17,7 @@ export function FindUs() {
           <span className="f-opensans">{texts.span1}</span>
           <span className="f-opensans">{texts.span2}</span>
         </div>
-        <Button title={texts.buttonTitle} />
+        <Button title={texts.btnTitle} />
       </div>
       <div className="findus-image">
         <Image src={images.findus} alt={altTexts.altImg} width={667} height={736} />

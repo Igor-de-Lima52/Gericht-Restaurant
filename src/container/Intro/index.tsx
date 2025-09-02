@@ -4,6 +4,7 @@ import styles from './index.module.css';
 
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import { useEffect, useRef, useState } from 'react';
+import { texts } from './language';
 
 export function Intro() {
   const [playVideo, setPlayVideo] = useState(false);
@@ -39,7 +40,7 @@ export function Intro() {
     <section className={styles.video}>
       <video ref={videoRef} controls={false} muted>
         <source src="/assets/meal.mp4" type="video/mp4" />
-        Your browser doesn't support the video tag.
+        {texts.videoMessage}
       </video>
 
       <div className={`${styles.overlay} flex-center`}>

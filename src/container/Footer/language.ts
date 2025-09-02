@@ -17,8 +17,6 @@ let texts = {
 
 let altTexts = {
   altImgLogo: "Small yellow spoon",
-  altQuote: "Quote",
-  altSign: "Sign"
 }
 
 switch(language) {
@@ -40,8 +38,6 @@ switch(language) {
 
     altTexts = {
       altImgLogo: "Pequena colher amarela",
-      altQuote: "Aspas",
-      altSign: "Assinatura"
     }
 
     break;
@@ -64,8 +60,6 @@ switch(language) {
 
     altTexts = {
       altImgLogo: "Small yellow spoon",
-      altQuote: "Quote",
-      altSign: "Sign"
     }
     
     break;

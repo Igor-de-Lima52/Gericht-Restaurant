@@ -18,7 +18,7 @@ export function AboutUs() {
           <h3 className="headtext-cormorant">{texts.subtitle1}</h3>
           <Image src={images.spoon} alt={altTexts.altSpoon} className="spoon-img" width={45} height={30} />
           <p className="f-opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-          <Button title={texts.buttonTitle} />
+          <Button title={texts.btnTitle} />
         </div>
         
         <div className={`${styles.knife} flex-center`}>
@@ -29,7 +29,7 @@ export function AboutUs() {
           <h3 className="headtext-cormorant">{texts.subtitle2}</h3>
           <Image src={images.spoon} alt={altTexts.altSpoon} className="spoon-img" width={45} height={30} />
           <p className="f-opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-          <Button title={texts.buttonTitle} />
+          <Button title={texts.btnTitle} />
         </div>
       </div>
     </section>

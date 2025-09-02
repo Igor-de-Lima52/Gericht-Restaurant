@@ -5,17 +5,18 @@ import * as MenuItem from '@/components/MenuItem';
 import { data, images } from '@/constants/portuguese';
 import Image from 'next/image';
 import { Button } from '@/components/Button';
+import { altTexts, texts } from './language';
 
 export function SpecialMenu() {
   return (
     <div className={`${styles.specialMenu} flex-center section-padding`} id="menu">
       <div className={styles.title}>
-        <SubHeading title="Menu that fits you palatte" />
-        <h3 className="headtext-cormorant">Today's Special</h3>
+        <SubHeading title={texts.subtitle1} />
+        <h3 className="headtext-cormorant">{texts.title}</h3>
       </div>
       <div className={styles.menu}>
         <div className={`${styles['menu-wine']} flex-center`}>
-          <h4 className="f-cormorant">Wine & Beer</h4>
+          <h4 className="f-cormorant">{texts.subtitle2}</h4>
             {
               data.wines.map((wine, index) => (
                 <MenuItem.Root key={index}>
@@ -27,11 +28,11 @@ export function SpecialMenu() {
         </div>
 
         <div className={styles['menu-img']}>
-          <Image src={images.menu} alt="Coktail cup" width={150} height={200}  />
+          <Image src={images.menu} alt={altTexts.altImg} width={150} height={200}  />
         </div>
 
         <div className={`${styles['menu-cocktails']} flex-center`}>
-          <h4 className="f-cormorant">Cocktails</h4>
+          <h4 className="f-cormorant">{texts.subtitle3}</h4>
             {
               data.cocktails.map((cocktail, index) => (
                 <MenuItem.Root key={index}>
@@ -44,7 +45,7 @@ export function SpecialMenu() {
       </div>
 
       <div className={styles['div-button']}>
-        <Button type="button" title="View More" />
+        <Button type="button" title={texts.btnTitle} />
       </div>
     </div>
   )

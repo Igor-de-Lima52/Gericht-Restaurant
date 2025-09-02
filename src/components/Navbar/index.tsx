@@ -7,8 +7,7 @@ import { useState } from 'react';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-
-const links = ["home", "about", "menu", "awards", "contact"]
+import { links } from './language';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

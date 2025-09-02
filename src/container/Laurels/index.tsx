@@ -6,13 +6,14 @@ import { images } from '@/constants/portuguese';
 import { SubHeading } from '@/components/SubHeading';
 import { data } from '@/constants/portuguese';
 import { Topic } from './topic';
+import { texts } from './language';
 
 export function Laurels() {
   return (
     <section className="app-bg wrapper section-padding" id="awards">
       <div>
-        <SubHeading title='Awards & Recognition' />
-        <h3 className="headtext-cormorant">Our Laurels</h3>
+        <SubHeading title={texts.subtitle} />
+        <h3 className="headtext-cormorant">{texts.title}</h3>
         <div className={styles.topics}>
           {
             data.awards.map((award, index) => <Topic key={index} data={award} />)
@@ -20,7 +21,7 @@ export function Laurels() {
         </div>
       </div>
       <div className={styles.image}>
-        <Image src={images.laurels} alt="A grilled chicken with some asparagus and cherry tomatoes." width={555} height={691} />
+        <Image src={images.laurels} alt="" width={555} height={691} />
       </div>
     </section>
   )

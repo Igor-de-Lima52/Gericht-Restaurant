@@ -7,7 +7,7 @@ let texts = {
   info: "Opening hours",
   span1: "Mon - Fri: 10:00 am - 02:00 am",
   span2: "Sat - Sun: 10:00 am - 03:00 am",
-  buttonTitle: "Visit us",
+  btnTitle: "Visit us",
 }
 
 let altTexts = {
@@ -23,7 +23,7 @@ switch(language) {
       info: "Horário de funcionamento",
       span1: "Seg - Sex: 10:00 am - 02:00 am",
       span2: "Sáb - Dom: 10:00 am - 03:00 am",
-      buttonTitle: "Nos visite",
+      btnTitle: "Nos visite",
     }
 
     altTexts = {
@@ -40,7 +40,7 @@ switch(language) {
       info: "Opening hours",
       span1: "Mon - Fri: 10:00 am - 02:00 am",
       span2: "Sat - Sun: 10:00 am - 03:00 am",
-      buttonTitle: "Visit us",
+      btnTitle: "Visit us",
     }
 
     altTexts = {

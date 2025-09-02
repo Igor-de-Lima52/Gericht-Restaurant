@@ -4,7 +4,7 @@ let texts = {
   title: "Chef's World",
   subtitle1: "About us",
   subtitle2: "Our history",
-  buttonTitle: "Know more",
+  btnTitle: "Know more",
   paragraph1: "",
   paragraph2: "",
 }
@@ -21,7 +21,7 @@ switch(language) {
       title: "Mundo do chef",
       subtitle1: "Sobre",
       subtitle2: "Nossa História",
-      buttonTitle: "Saber mais",
+      btnTitle: "Saber mais",
       paragraph1: "",
       paragraph2: "",
     }
@@ -39,7 +39,7 @@ switch(language) {
       title: "Chef's World",
       subtitle1: "About us",
       subtitle2: "Our history",
-      buttonTitle: "Know more",
+      btnTitle: "Know more",
       paragraph1: "",
       paragraph2: "",
     }

@@ -5,20 +5,21 @@ import { images } from '@/constants/portuguese';
 
 import { SubHeading } from '@/components/SubHeading';
 import { Button } from '@/components/Button';
+import { altTexts, texts } from './language';
 
 export function Header() {
   return (
     <section className={`${styles.header} wrapper section-padding`} id="home">
       <div className={`wrapper-info ${styles.info}`}>
-        <SubHeading title="Chase the new flavour" />
-        <h2>The Key to Fine Dining</h2>
+        <SubHeading title={texts.subtitle} />
+        <h2>{texts.title}</h2>
         <p className="f-opensans" style={{ margin: '2rem 0'}}>
           Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus 
         </p>
-        <Button title="Explore Menu" type="button" />
+        <Button title={texts.btnTitle} type="button" />
       </div>
       <div className="wrapper-img">
-        <Image className="img" src={images.welcome} alt="Header img" width={367} height={436} />
+        <Image className="img" src={images.welcome} alt={altTexts.altImg} width={367} height={436} />
       </div>
     </section>
   )

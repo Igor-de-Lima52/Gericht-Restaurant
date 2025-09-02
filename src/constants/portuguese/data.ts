@@ -7,7 +7,7 @@ const wines = [
     tags: "AU | Garrafa",
   },
   {
-    title: "Catena Malbee",
+    title: "Catena Malbec",
     price: "R$118",
     tags: "AU | Garrafa",
   },
@@ -30,7 +30,7 @@ const wines = [
 
 const cocktails = [
   {
-    title: "Aperol Sprtiz",
+    title: "Aperol Spritz",
     price: "R$40",
     tags: "Aperol | Villa Marchesi prosecco | refrigerante | 30ml",
   },
