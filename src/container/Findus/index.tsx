@@ -3,11 +3,11 @@ import "./styles.css"
 import { images } from "@/constants/portuguese"
 import { SubHeading } from "@/components/SubHeading"
 import { Button } from "@/components/Button"
-import { altTexts, texts } from "./language"
+import { altTexts, link, texts } from "./language"
 
 export function FindUs() {
   return (
-    <div className="findus flex-center app-bg section-padding" id="contact">
+    <div className="findus flex-center app-bg section-padding" id={link}>
       <div className="findus-info">
         <SubHeading title={texts.title} />
         <h3 className="headtext-cormorant">{texts.subtitle}</h3>

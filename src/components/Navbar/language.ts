@@ -1,15 +1,15 @@
 const language = 'portuguese';
 
-let links = ["home", "about", "menu", "awards", "contact"];
+let links = ["Home", "About", "Menu", "Awards", "Contact"];
 
 switch(language) {
   case 'portuguese':
-    links = ["home", "sobre", "menu", "prêmios", "contato"];
+    links = ["Home", "Sobre", "Menu", "Premios", "Contato"];
 
     break;
   
   default:
-    links = ["home", "about", "menu", "awards", "contact"];
+    links = ["Home", "About", "Menu", "Awards", "Contact"];
     
     break;
 }

@@ -9,7 +9,7 @@ import { altTexts, texts } from './language';
 
 export function SpecialMenu() {
   return (
-    <div className={`${styles.specialMenu} flex-center section-padding`} id="menu">
+    <div className={`${styles.specialMenu} flex-center section-padding`} id="Menu">
       <div className={styles.title}>
         <SubHeading title={texts.subtitle1} />
         <h3 className="headtext-cormorant">{texts.title}</h3>

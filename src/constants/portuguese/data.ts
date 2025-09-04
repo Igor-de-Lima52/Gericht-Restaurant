@@ -60,22 +60,22 @@ const awards = [
   {
     imgUrl: images.award01,
     title: "Estrela em Ascensão",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Reconhecimento pelo nosso compromisso em trazer frescor e criatividade à gastronomia local.",
   },
   {
     imgUrl: images.award02,
     title: "Bib Gourmond",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Prêmio concedido pela qualidade da cozinha e excelente custo-benefício.",
   },
   {
     imgUrl: images.award03,
     title: "Chef de destaque",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Kevin Luo foi homenageado por seu estilo inovador e respeito às tradições culinárias.",
   },
   {
     imgUrl: images.award05,
     title: "Hospitalidade AA",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Premiação pela excelência no atendimento e ambiente acolhedor.",
   },
 ];
 

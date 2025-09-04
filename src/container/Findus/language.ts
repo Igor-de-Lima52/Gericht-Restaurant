@@ -1,5 +1,7 @@
 const language = 'portuguese';
 
+let link = "Contact";
+
 let texts = {
   title: "Contact",
   subtitle: "Find us",
@@ -16,6 +18,8 @@ let altTexts = {
 
 switch(language) {
   case 'portuguese':
+    link = "Contato";
+
     texts = {
       title: "Contato",
       subtitle: "Nos encontre",
@@ -33,6 +37,8 @@ switch(language) {
     break;
   
   default:
+    link = "Contact";
+
     texts = {
       title: "Contact",
       subtitle: "Find us",
@@ -50,4 +56,4 @@ switch(language) {
     break;
 }
 
-export { texts, altTexts };
+export { texts, altTexts, link };

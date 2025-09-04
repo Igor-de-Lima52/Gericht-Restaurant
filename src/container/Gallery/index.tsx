@@ -31,7 +31,7 @@ export function Gallery() {
       <div className={styles.info}>
         <SubHeading title="Instagram" />
         <h3 className='headtext-cormorant'>{texts.title}</h3>
-        <p className='f-opensans'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+        <p className='f-opensans'>{texts.paragraph}</p>
         <Button title={texts.btnTitle} type="button" />
       </div>
       <div className={styles.imgs}>

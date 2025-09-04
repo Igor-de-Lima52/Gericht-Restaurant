@@ -6,11 +6,11 @@ import { images } from '@/constants/portuguese';
 import { SubHeading } from '@/components/SubHeading';
 import { data } from '@/constants/portuguese';
 import { Topic } from './topic';
-import { texts } from './language';
+import { altTexts, link, texts } from './language';
 
 export function Laurels() {
   return (
-    <section className="app-bg wrapper section-padding" id="awards">
+    <section className="app-bg wrapper section-padding" id={link}>
       <div>
         <SubHeading title={texts.subtitle} />
         <h3 className="headtext-cormorant">{texts.title}</h3>
@@ -21,7 +21,7 @@ export function Laurels() {
         </div>
       </div>
       <div className={styles.image}>
-        <Image src={images.laurels} alt="" width={555} height={691} />
+        <Image src={images.laurels} alt={altTexts.altImg} width={555} height={691} />
       </div>
     </section>
   )

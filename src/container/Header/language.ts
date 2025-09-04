@@ -4,7 +4,7 @@ let texts = {
   title: "The Key to Fine Dining",
   subtitle: "Chase the new flavour",
   btnTitle: "Explore Menu",
-  paragraph: "",
+  paragraph: "Discover a unique gastronomic experience, where tradition and innovation meet on the same plate. Every detail is designed to transform your meal into an unforgettable experience, full of flavor, aroma, and comfort.",
 }
 
 let altTexts = {
@@ -17,7 +17,7 @@ switch(language) {
       title: "A Chave para um Ótimo Jantar",
       subtitle: "Vá atrás do novo sabor",
       btnTitle: "Explorar Cardápio",
-      paragraph: "",
+      paragraph: "Descubra uma experiência gastronômica única, onde tradição e inovação se encontram no mesmo prato. Cada detalhe é pensado para transformar sua refeição em um momento inesquecível, cheio de sabor, aroma e aconchego.",
     }
 
     altTexts = {
@@ -31,7 +31,7 @@ switch(language) {
       title: "The Key to Fine Dining",
       subtitle: "Chase the new flavour",
       btnTitle: "Explore Menu",
-      paragraph: "",
+      paragraph: "Discover a unique gastronomic experience, where tradition and innovation meet on the same plate. Every detail is designed to transform your meal into an unforgettable experience, full of flavor, aroma, and comfort.",
     }
 
     altTexts = {

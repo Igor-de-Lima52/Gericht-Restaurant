@@ -60,22 +60,22 @@ const awards = [
   {
     imgUrl: images.award01,
     title: "Rising Star",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Recognition for our commitment to bringing freshness and creativity to local cuisine.",
   },
   {
     imgUrl: images.award02,
     title: "Bib Gourmond",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Award given for the quality of the cuisine and excellent value for money.",
   },
   {
     imgUrl: images.award03,
     title: "Outstanding Chef",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Kevin Luo was honored for his innovative style and respect for culinary traditions.",
   },
   {
     imgUrl: images.award05,
     title: "AA Hospitality",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Award for excellence in service and welcoming environment.",
   },
 ];
 
