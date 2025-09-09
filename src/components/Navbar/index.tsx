@@ -31,11 +31,11 @@ export function Navbar() {
         <li className="f-opensans"><a href='#awards'>Awards</a></li>
         <li className="f-opensans"><a href='#contact'>Contact</a></li> */}
       </ul>
-      <div className={styles.login}>
+      {/* <div className={styles.login}>
         <Link href="#login" className="f-opensans">Log In / Register</Link>
         <div />
         <Link href="/" className="f-opensans">Book Table</Link>
-      </div>
+      </div> */}
       <div className={styles.smallscreen}>
         <button className={styles['smallscreen-button-open']} onClick={handleToggleMenu}>
           <GiHamburgerMenu color="white" />

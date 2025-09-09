@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className={`${styles.footer} section-padding`}>
       <FooterOverlay />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <div className={styles.links}>
         <div className={styles['links-contact']}>
           <h4>{texts.subtitle1}</h4>

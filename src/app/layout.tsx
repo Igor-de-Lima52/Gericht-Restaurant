@@ -24,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* <link rel="icon" href="/favicon.ico" sizes="any" className="favicon"/> */}
+      <link
+        rel="icon"
+        href="/icon?<generated>"
+        type="image/<generated>"
+        sizes=""
+        className="favicon"
+      />
       <body className={`${openSans.variable} ${cormorantUpright.variable}`}>
         {children}
       </body>
